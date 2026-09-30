@@ -1,0 +1,617 @@
+{
+  "name": "dados_check_siafi",
+  "title": "Validador do datapackage dados_siafi",
+  "resources": [
+    {
+      "name": "alteracoes_orcamentarias",
+      "type": "table",
+      "path": "data/alteracoes_orcamentarias.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:6c33873cb60d1294ee76ffac5bcfd6336792805859456c9e5e6f001fec7c69da",
+      "bytes": 403,
+      "fields": 5,
+      "rows": 5,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_suplementacao",
+            "type": "number",
+            "title": "Valor Suplementação",
+            "description": "Valor, em reais, destinado a reforço de dotação orçamentária.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_anulacao",
+            "type": "number",
+            "title": "Valor Anulação Crédito",
+            "description": "Valor, em reais, da anulação de crédito na dotação orçamentária.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_credito_inicial",
+            "type": "number",
+            "title": "Valor Crédito Inicial",
+            "description": "Valor, em reais, do crédito orçamentário aprovado pela Lei Orçamentária.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_credito_autorizado",
+            "type": "number",
+            "title": "Valor Crédito Autorizado",
+            "description": "Valor total, em reais, correspondente ao somatório dos créditos disponíveis para a execução da despesa.\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cota",
+      "type": "table",
+      "path": "data/cota.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:f3a4f886de5e632311d2331c80bee9e6724ebc077dd978dfa2dbf6621a5ee882",
+      "bytes": 322,
+      "fields": 4,
+      "rows": 5,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_cota_aprovada",
+            "type": "number",
+            "title": "Valor Cota Aprovada",
+            "description": "Valor, em reais, da cota aprovada.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_cota_anulada",
+            "type": "number",
+            "title": "Valor Anulação Cota Aprovada",
+            "description": "Valor anulado da cota aprovada, em reais.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_cota_aprovada_liquida",
+            "type": "number",
+            "title": "Valor Cota Aprovada Líquida",
+            "description": "Valor líquido, em reais, da cota aprovada.\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "credito",
+      "type": "table",
+      "path": "data/credito.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:61ad4e42961e6e90ae1ca8dfa3a5c6bcae9388b33c0b008efb8fd3d5a70cd444",
+      "bytes": 327,
+      "fields": 4,
+      "rows": 5,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_credito_inicial",
+            "type": "number",
+            "title": "Valor Crédito Inicial",
+            "description": "Valor, em reais, do crédito orçamentário aprovado pela Lei Orçamentária.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_credito_autorizado",
+            "type": "number",
+            "title": "Valor Crédito Autorizado",
+            "description": "Valor total, em reais, correspondente ao somatório dos créditos disponíveis para a execução da despesa.\n"
+          },
+          {
+            "name": "vlr_cota_descentralizada",
+            "type": "number",
+            "title": "Valor Cota Descentralizada",
+            "description": "Valor, em reais, das cotas descentralizadas às unidades executotas.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "execucao",
+      "type": "table",
+      "path": "data/execucao.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:70d0880b88932e834b488b067ecd9aabaaa3df8488e6ef150bae363c552774d0",
+      "bytes": 508,
+      "fields": 6,
+      "rows": 5,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_empenhado",
+            "type": "number",
+            "title": "Valor Despesa Empenhada",
+            "description": "Valor líquido, em reais, da despesa empenhada.\n"
+          },
+          {
+            "name": "vlr_liquidado",
+            "type": "number",
+            "title": "Valor Despesa Liquidada",
+            "description": "Valor total da despesa liquidada, em reais.\n"
+          },
+          {
+            "name": "vlr_liquidado_retido",
+            "type": "number",
+            "title": "Valor Liquidado Retido",
+            "description": "Valor, em reais, referente às retenções - parte da liquidação a favor de terceiros,\nindicado apenas para análise de um documento de liquidação específico.\n"
+          },
+          {
+            "name": "vlr_pago_orcamentario",
+            "type": "number",
+            "title": "Valor Pago Orçamentário",
+            "description": "Valor pago, por empenho.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_pago_financeiro",
+            "type": "number",
+            "title": "Valor Pago Financeiro",
+            "description": "Valor referente aos pagamentos efetuados através de movimentações bancárias, escriturais e apropriação contábil da despesa.\nEsse cálculo não inclui valor de anulação de despesa paga.\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "execucao_alem_credito",
+      "type": "table",
+      "path": "data/execucao_alem_credito.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:08fdab8920f9d96a2e566ab1803eb2f16928555cc2d049b8b681c18a3d5e55d9",
+      "bytes": 228,
+      "fields": 4,
+      "rows": 5,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_alem_credito",
+            "type": "number",
+            "title": "Valor Além Crédito",
+            "description": "Valor, em reais, da despesa de pessoal pendente de regularização por falta de crédito orçamentário.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_regularizado",
+            "type": "number",
+            "title": "Valor Regularizado",
+            "description": "Valor, em reais, da parte regularizada da despesa de pessoal pendente de regularização por falta de crédito orçamentário.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_anulado",
+            "type": "number",
+            "title": "Valor Anulado",
+            "description": "Valor, em reais, da parte anulada da despesa de pessoal pendente de regularização por falta de crédito orçamentário.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "receita",
+      "type": "table",
+      "path": "data/receita.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:950955c57c46d4b308089a2f2a7fde6ff8ad9bae891ef0ec6715cd7ac5808499",
+      "bytes": 489,
+      "fields": 6,
+      "rows": 5,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_previsto_inicial",
+            "type": "number",
+            "title": "Valor Previsto Inicial",
+            "description": "Valor, em reais, da previsão inicial da receita.\n"
+          },
+          {
+            "name": "vlr_previsto_adicional",
+            "type": "number",
+            "title": "Valor Previsto Adicional",
+            "description": "Valor, em reais, da previsão adicional da receita.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_previsto_atualizado",
+            "type": "number",
+            "title": "Valor Previsto Atualizado",
+            "description": "Valor, em reais, da previsão atualizada da receita.\n"
+          },
+          {
+            "name": "vlr_contabilizado",
+            "type": "number",
+            "title": "Valor Contabilizado",
+            "description": "Valor, em reais, da receita orçamentária contabilizada.\nAparece negativo quando houve cancelamento da receita.\n"
+          },
+          {
+            "name": "vlr_efetivado_ajustado",
+            "type": "number",
+            "title": "Valor Efetivado Ajustado",
+            "description": "Valor, em reais, da receita orçamentária efetivada ajustada.\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "restos_pagar",
+      "type": "table",
+      "path": "data/restos_pagar.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:32005b1f60f67f313f5f0d2feddfb8ed22f2484ace91dffcd73346a54c383b81",
+      "bytes": 5591,
+      "fields": 20,
+      "rows": 25,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_inscrito_rpnp",
+            "type": "number",
+            "title": "Valor Inscrito Não Processado",
+            "description": "Valor, em reais, de saldo de empenhos.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_cancelado_rpnp",
+            "type": "number",
+            "title": "Valor Cancelado Não Processado",
+            "description": "Valor cancelado, em reais, de empenho inscrito em Restos a Pagar não processado.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_restabelecido_rpnp",
+            "type": "number",
+            "title": "Valor Restabelecido Não Processado",
+            "description": "Valor restabelecido, em reais, de empenho inscrito em Restos a Pagar não processado, cancelado anteriormente.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_despesa_liquidada_rpnp",
+            "type": "number",
+            "title": "Valor Despesa Liquidada",
+            "description": "Valor total, em reais, da despesa liquidada de resto a pagar não processado, registrada no exercício.\n"
+          },
+          {
+            "name": "vlr_despesa_liquidada_pagar",
+            "type": "number",
+            "title": "Valor Despesa Liquidada a Pagar",
+            "description": "Valor total, em reais, do saldo a pagar.\n"
+          },
+          {
+            "name": "vlr_saldo_rpp",
+            "type": "number",
+            "title": "Saldo Restos a Pagar Processado",
+            "description": "Valor, em reais, de saldo a pagar de despesa liquidada inscrita em Restos a Pagar processado.\n"
+          },
+          {
+            "name": "vlr_saldo_rpnp",
+            "type": "number",
+            "title": "Saldo Restos a Pagar Não Processado",
+            "description": "Valor, em reais, de saldo a liquidar de empenhos inscritos em Restos a Pagar não processado.\n"
+          },
+          {
+            "name": "vlr_inscrito_rpp",
+            "type": "number",
+            "title": "Valor Inscrito Processado",
+            "description": "Valor, em reais, de despesa liquidada de exercícios anteriores.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_cancelado_rpp",
+            "type": "number",
+            "title": "Valor Cancelado Processado",
+            "description": "Valor cancelado, em reais, de despesa liquidada inscrita em Restos a Pagar.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_desconto_rpp",
+            "type": "number",
+            "title": "Valor Desconto Processado",
+            "description": "Valor, em reais, de abatimento sobre o valor de pagamento de inscrição em Restos a Pagar processado.\nAtenção: não considera os descontos efetuados em pagamentos de retenção/consignação.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_restabelecido_rpp",
+            "type": "number",
+            "title": "Valor Restabelecido Processado",
+            "description": "Valor restabelecido, em reais, de despesa liquidada inscrita, cancelada anteriormente.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_pago_rpp",
+            "type": "number",
+            "title": "Valor Pago Processado",
+            "description": "Valor pago, em reais, referente a valor inscrito processado, total ou parcial.\nAtenção: não considera os valores pagos de retenção/consignação.\n"
+          },
+          {
+            "name": "vlr_anulacao_pagamento_rpp",
+            "type": "number",
+            "title": "Valor Anulação Pagamento Processado",
+            "description": "Valor, em reais, da anulação da despesa através da devolução, do Pagamento de restos a pagar processado.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_retencao_rpp",
+            "type": "number",
+            "title": "Valor Retenção Processado",
+            "description": "Valor restabelecido, em reais, de despesa liquidada inscrita, cancelada anteriormente.\n"
+          },
+          {
+            "name": "vlr_anulacao_retencao_rpp",
+            "type": "number",
+            "title": "Valor Anulação Retenção Processado",
+            "description": "Valor, em reais, de anulação do valor de retenção processado.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_anulacao_pago_antecipado",
+            "type": "number",
+            "title": "Valor Anulação Pago Antecipado",
+            "description": "Valor total, em reais, de anulação de pago antecipado de restos a pagar.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_pago_antecipado_exercicio",
+            "type": "number",
+            "title": "Valor Pago Antecipado Exercício",
+            "description": "Valor Contratual Pago antecipado.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_pago_rpnp",
+            "type": "number",
+            "title": "Valor Pago Não Processado",
+            "description": "Valor pago, em reais, referente a valor inscrito não processado, total ou parcial.\nAtenção: não considera os valores pagos de retenção/consignação.\n"
+          },
+          {
+            "name": "vlr_retencao_rpnp",
+            "type": "number",
+            "title": "Valor Retenção Não Processado",
+            "description": "Valor, em reais, de Restos a Pagar não processado de Ordem de Pagamento.\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "restos_pagar_folha",
+      "type": "table",
+      "path": "data/restos_pagar_folha.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:4b80bffc803177ff8985c1f9688019b8de7b3403d49ebe41b44c8984d8ea474c",
+      "bytes": 1526,
+      "fields": 5,
+      "rows": 25,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano",
+            "type": "string",
+            "title": "Ano de Exercício",
+            "description": "Ano de exercício do orçamento fiscal.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "vlr_inscrito_folha",
+            "type": "number",
+            "title": "Valor Inscrito Folha",
+            "description": "Valor, em reais, da folha de pagamento de exercícios anteriores inscrita em Restos a Pagar.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_anulado_folha",
+            "type": "number",
+            "title": "Valor Anulado Folha",
+            "description": "Valor anulado, em reais, do saldo da folha de pagamento de exercícios anteriores inscrita em Restos a Pagar - FP.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_pago_folha",
+            "type": "number",
+            "title": "Valor Pago Folha",
+            "description": "Valor pago, em reais, referente a valor inscrito processado de folha de pagamento, total ou parcial.\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_despesa_liquidada_pagar_folha",
+            "type": "number",
+            "title": "Valor Despesa Liquidada a Pagar - Folha",
+            "description": "Valor, em reais, do saldo a pagar processado de folha de pagamento.\n"
+          }
+        ]
+      }
+    }
+  ],
+  "updated_at": "2026-09-30T13:29:55"
+}
