@@ -28,7 +28,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -75,7 +75,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:99dc1a44e42144986bbf5e3cc906eccf117f6b3eedf67e8bf4e990bc3285b678",
+      "hash": "sha256:a5d8ac6608bb4c1f175ffdcaa5713f5e24bb05508cf5d99da88804f341ab4c54",
       "bytes": 323,
       "fields": 4,
       "rows": 5,
@@ -93,7 +93,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -131,7 +131,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:43237bb9530dfa31acb5fab0057ff10ee087cec50a977490d4c5632e5b0c3d9a",
+      "hash": "sha256:2c5c373c58174812f59a3ae5562a6034b4b26a8b326c010c2ba0ad1f2a73e31c",
       "bytes": 328,
       "fields": 4,
       "rows": 5,
@@ -149,7 +149,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -187,8 +187,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:2f40883957fb37962d8c8deeff2cc93188dab6c57e2d4f2988d44caa944c42bc",
-      "bytes": 508,
+      "hash": "sha256:138903e59a335fa3957778f4e81067dceb1ab0b1b0407f55959ccd70cb25d64c",
+      "bytes": 506,
       "fields": 6,
       "rows": 5,
       "dialect": {
@@ -205,7 +205,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -270,7 +270,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -311,7 +311,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:59cdd74ca3c4d201b338eb75af13fa501303d5f8a5cfd0fa9ec407319037d292",
+      "hash": "sha256:956dac54479eeb0e91f5a27388decaa68c78056e7586db0929b00aca45fa8ef6",
       "bytes": 489,
       "fields": 6,
       "rows": 5,
@@ -329,7 +329,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -376,8 +376,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:236cbec257931c7a0324078deb346b55a7617d5f7428ee083cebc7603e5abe56",
-      "bytes": 5590,
+      "hash": "sha256:7497cd151f4ff8aad67d4e326d55ed6d6970ad46e1b818c1fb255c34aad92d44",
+      "bytes": 5591,
       "fields": 20,
       "rows": 25,
       "dialect": {
@@ -394,7 +394,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -573,7 +573,7 @@
             "description": "Ano de exercício do orçamento fiscal.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -613,5 +613,5 @@
       }
     }
   ],
-  "updated_at": "2026-10-08T17:34:51"
+  "updated_at": "2026-10-09T17:10:54"
 }
