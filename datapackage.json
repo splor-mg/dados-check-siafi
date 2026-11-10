@@ -10,7 +10,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:71e4f158fe2791b67071d2b335126438d4f6c698efe4476baf30d4ff521ba071",
+      "hash": "sha256:2ccda05dd2dfd896dc9d3778e07887f43de4eb6555c88e83ff566af24a024cac",
       "bytes": 402,
       "fields": 5,
       "rows": 5,
@@ -35,28 +35,19 @@
             "name": "vlr_suplementacao",
             "type": "number",
             "title": "Valor Suplementação",
-            "description": "Valor, em reais, destinado a reforço de dotação orçamentária.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, destinado a reforço de dotação orçamentária.\n"
           },
           {
             "name": "vlr_anulacao",
             "type": "number",
             "title": "Valor Anulação Crédito",
-            "description": "Valor, em reais, da anulação de crédito na dotação orçamentária.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, da anulação de crédito na dotação orçamentária.\n"
           },
           {
             "name": "vlr_credito_inicial",
             "type": "number",
             "title": "Valor Crédito Inicial",
-            "description": "Valor, em reais, do crédito orçamentário aprovado pela Lei Orçamentária.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, do crédito orçamentário aprovado pela Lei Orçamentária.\n"
           },
           {
             "name": "vlr_credito_autorizado",
@@ -75,8 +66,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:2c85720748308edf4ef0cc68020a062e53acc3abce0504b2b0b3310587680959",
-      "bytes": 322,
+      "hash": "sha256:65e2a65e79294dbbf749e6244de2515674c7b4df361afdb562061e23db54be75",
+      "bytes": 323,
       "fields": 4,
       "rows": 5,
       "dialect": {
@@ -100,10 +91,7 @@
             "name": "vlr_cota_aprovada",
             "type": "number",
             "title": "Valor Cota Aprovada",
-            "description": "Valor, em reais, da cota aprovada.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, da cota aprovada.\n"
           },
           {
             "name": "vlr_cota_anulada",
@@ -131,7 +119,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:5ccf0db5a36213575f29cb8f3f698eb2833e78879e24dd098b2538d48df109bf",
+      "hash": "sha256:140a3177518a1e3afcf53ce981bd761c685bd3dad978c25375f63747b29753cc",
       "bytes": 328,
       "fields": 4,
       "rows": 5,
@@ -156,10 +144,7 @@
             "name": "vlr_credito_inicial",
             "type": "number",
             "title": "Valor Crédito Inicial",
-            "description": "Valor, em reais, do crédito orçamentário aprovado pela Lei Orçamentária.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, do crédito orçamentário aprovado pela Lei Orçamentária.\n"
           },
           {
             "name": "vlr_credito_autorizado",
@@ -187,8 +172,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:5bfe0bb2f2dac468dae669947040173ebb11e130142a5d676a87f43c81fe3023",
-      "bytes": 510,
+      "hash": "sha256:de7ed085def63d4737f8ab21efe42630cc05476ce5aabef851177b906f067484",
+      "bytes": 511,
       "fields": 6,
       "rows": 5,
       "dialect": {
@@ -230,10 +215,7 @@
             "name": "vlr_pago_orcamentario",
             "type": "number",
             "title": "Valor Pago Orçamentário",
-            "description": "Valor pago, por empenho.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor pago, por empenho.\n"
           },
           {
             "name": "vlr_pago_financeiro",
@@ -252,7 +234,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:83b8c808970f5dfbd8ebdfd835aee8e9f0c6824f827bc845f01769dcc1d04bc3",
+      "hash": "sha256:8125fa1552525510dacc37ea375c0e8c1d4dcaa42eaa17ec2ca729390343edae",
       "bytes": 228,
       "fields": 4,
       "rows": 5,
@@ -311,7 +293,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:5b35d53d948a38829a23c41948ecf424ec2417c2a815e49e38bfc3affe566d6d",
+      "hash": "sha256:f677a8b8f3592612f0f5c34230748cb9440a8be5544ecb46ccd072fdea601524",
       "bytes": 489,
       "fields": 6,
       "rows": 5,
@@ -342,10 +324,7 @@
             "name": "vlr_previsto_adicional",
             "type": "number",
             "title": "Valor Previsto Adicional",
-            "description": "Valor, em reais, da previsão adicional da receita.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, da previsão adicional da receita.\n"
           },
           {
             "name": "vlr_previsto_atualizado",
@@ -376,8 +355,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:9fb37b78226b625476510e9afb413e92f4ac962a4f65d10e9afa9cb03ff9586f",
-      "bytes": 5590,
+      "hash": "sha256:3c7d53ce62cc60402d953735407dfaf10719f12fbbbbd78978c8b58feb76353d",
+      "bytes": 5591,
       "fields": 20,
       "rows": 25,
       "dialect": {
@@ -494,10 +473,7 @@
             "name": "vlr_anulacao_pagamento_rpp",
             "type": "number",
             "title": "Valor Anulação Pagamento Processado",
-            "description": "Valor, em reais, da anulação da despesa através da devolução, do Pagamento de restos a pagar processado.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor, em reais, da anulação da despesa através da devolução, do Pagamento de restos a pagar processado.\n"
           },
           {
             "name": "vlr_retencao_rpp",
@@ -555,7 +531,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:5abe6e6c2c10b245504331b44599cbacf6c2ef6020a2de5a2f2ec703380b2e59",
+      "hash": "sha256:8dcec151b2f6e2332d1eb8fa6c2792680f7f523638d2ff72638c81ce716ea375",
       "bytes": 1526,
       "fields": 5,
       "rows": 25,
@@ -598,10 +574,7 @@
             "name": "vlr_pago_folha",
             "type": "number",
             "title": "Valor Pago Folha",
-            "description": "Valor pago, em reais, referente a valor inscrito processado de folha de pagamento, total ou parcial.\n",
-            "constraints": {
-              "minimum": 0
-            }
+            "description": "Valor pago, em reais, referente a valor inscrito processado de folha de pagamento, total ou parcial.\n"
           },
           {
             "name": "vlr_despesa_liquidada_pagar_folha",
@@ -613,5 +586,5 @@
       }
     }
   ],
-  "updated_at": "2026-11-09T20:38:08"
+  "updated_at": "2026-11-10T10:06:35"
 }
